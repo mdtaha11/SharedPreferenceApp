@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginTop="200dp"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginTop="250dp"
+        android:text="@string/password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/myemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:hint="@string/type"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/mypwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="250dp"
+        android:hint="@string/type"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:text="" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+
+        android:onClick="saveInfo"
+        android:text="@string/add"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/display_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="240dp"
+
+        android:onClick="display_Info"
+        android:text="@string/display"
+        android:layout_marginStart="240dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="152dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>
